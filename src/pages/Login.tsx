@@ -85,7 +85,7 @@ const Login = () => {
                   formik.touched.username && formik.errors.username
                     ? 'border-red-300'
                     : 'border-gray-300'
-                } placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:`}
+                } placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-[#dd8604]focus:border-[#dd8604]focus:z-10 sm:`}
                 {...formik.getFieldProps('username')}
               />
               {formik.touched.username && formik.errors.username && (
@@ -105,7 +105,7 @@ const Login = () => {
                   formik.touched.password && formik.errors.password
                     ? 'border-red-300'
                     : 'border-gray-300'
-                } placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:`}
+                } placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-[#dd8604] focus:border-[#dd8604] focus:z-10 sm:`}
                 {...formik.getFieldProps('password')}
               />
               {formik.touched.password && formik.errors.password && (
@@ -120,8 +120,8 @@ const Login = () => {
               disabled={formik.isSubmitting}
               className={`group relative w-full flex justify-center p-4 border border-transparent  font-medium rounded-md text-white ${
                 formik.isSubmitting
-                  ? 'bg-primary-light cursor-not-allowed'
-                  : 'bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary'
+                  ? 'bg-[#dd8604] cursor-not-allowed'
+                  : 'bg-[#dd8604] hover:bg-[#dd8604] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#dd8604]'
               }`}
             >
               {formik.isSubmitting ? 'Signing in...' : 'Sign in'}
